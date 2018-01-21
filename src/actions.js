@@ -1,6 +1,6 @@
 import * as actionTypes from './actionTypes'
 
-export const setNumber = value => ({
-  type: actionTypes.SET_NUMBER,
-  payload: { value }
+export const incrementTimerValue = timerId => ({
+  type: actionTypes.INCREMENT_TIMER_VALUE,
+  payload: { timerId }
 })
