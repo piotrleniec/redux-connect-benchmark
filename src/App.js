@@ -2,12 +2,9 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import store from './store'
-import NumberInput from './components/NumberInput'
-import A from './components/A'
+import ReactState from './components/ReactState'
 import B from './components/B'
 import C from './components/C'
-import logo from './logo.svg';
-import './App.css';
 
 class App extends Component {
   render() {
@@ -16,12 +13,12 @@ class App extends Component {
         <BrowserRouter>
           <div>
             <ul>
-              <li><Link to="/a">a</Link></li>
+              <li><Link to="/react-state">React State</Link></li>
               <li><Link to="/b">b</Link></li>
               <li><Link to="/c">c</Link></li>
             </ul>
 
-            <Route exact path="/a" component={A} />
+            <Route exact path="/react-state" component={ReactState} />
             <Route exact path="/b" component={B} />
             <Route exact path="/c" component={C} />
           </div>
