@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom'
 import store from './store'
 import ReactState from './components/ReactState'
 import ConnectAll from './components/ConnectAll'
-import C from './components/C'
+import ConnectOne from './components/ConnectOne'
 
 class App extends Component {
   render() {
@@ -15,12 +15,12 @@ class App extends Component {
             <ul>
               <li><Link to="/react-state">React State</Link></li>
               <li><Link to="/connect-all">Connect All</Link></li>
-              <li><Link to="/c">c</Link></li>
+              <li><Link to="/connect-one">Connect One</Link></li>
             </ul>
 
             <Route exact path="/react-state" component={ReactState} />
             <Route exact path="/connect-all" component={ConnectAll} />
-            <Route exact path="/c" component={C} />
+            <Route exact path="/connect-one" component={ConnectOne} />
           </div>
         </BrowserRouter>
       </Provider>
